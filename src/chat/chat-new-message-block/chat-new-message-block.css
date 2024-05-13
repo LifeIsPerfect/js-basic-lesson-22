@@ -1,0 +1,31 @@
+.chat-new-message-block {
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  border-top: 2px solid black;
+  padding: 5px;
+}
+
+.chat-new-message-block__send-button {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.chat-new-message-block__send-button-outter {
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-new-message-block__send-button {
+  border-radius: 12px;
+}
+
+.chat-new-message-block__message-text {
+  border-radius: 12px;
+  width: 100%;
+}
