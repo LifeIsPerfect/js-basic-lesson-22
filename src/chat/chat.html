@@ -3,9 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chat</title>
   </head>
-  <body></body>
+  <body>
+    <main class="chat-layout">
+      <header class="chat-title">
+        <div class="chat-title__image user-or-chat-image"></div>
+        <div class="chat-title__info">
+          <div class="chat-title__name">Друзья</div>
+          <div class="chat-title__participants-number">Участников: 6</div>
+        </div>
+      </header>
+      <div class="chat-messages-outter">
+        <div class="chat-messages">
+          <div id="chat1message1" class="chat-messages__element chat-message">
+            <div class="chat-message__header">
+              <div
+                class="chat-message__author-img chat-message__author-img_author-online user-or-chat-image"
+              ></div>
+              <!-- либо chat-message__author-img_author-offline -->
+              <div class="chat-message__author-name">Иван Иванов</div>
+            </div>
+            <div class="chat-message__content">Всем привет! Как ваши дела?</div>
+            <div class="chat-message__footer">
+              <div class="chat-message__send-date">22:05 07.05.2024</div>
+            </div>
+          </div>
+          <div id="chat1message2" class="chat-messages__element chat-message">
+            <div class="chat-message__header">
+              <div
+                class="chat-message__author-img chat-message__author-img_author-online user-or-chat-image"
+              ></div>
+              <!-- либо chat-message__author-img_author-offline -->
+              <div class="chat-message__author-name">Петр Петров</div>
+            </div>
+            <div class="chat-message__content">
+              Привет! Всё в порядке, а ты как?
+            </div>
+            <div class="chat-message__footer">
+              <div class="chat-message__send-date">22:07 07.05.2024</div>
+            </div>
+          </div>
+          <div id="chat1message3" class="chat-messages__element chat-message">
+            <div class="chat-message__header">
+              <div
+                class="chat-message__author-img chat-message__author-img_author-online user-or-chat-image"
+              ></div>
+              <!-- либо chat-message__author-img_author-offline -->
+              <div class="chat-message__author-name">Андрей Андреев</div>
+            </div>
+            <div class="chat-message__content">
+              Ребята, всем привет! Смотрите, какой я длинный текст написал:
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sequi ex perferendis deleniti praesentium est beatae fugiat,
+              dolorem iusto. Doloremque ipsa cumque praesentium, quos architecto
+              assumenda distinctio similique error quis. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Cumque sequi ex perferendis
+              deleniti praesentium est beatae fugiat, dolorem iusto. Doloremque
+              ipsa cumque praesentium, quos architecto assumenda distinctio
+              similique error quis.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cumque sequi ex perferendis deleniti praesentium
+              est beatae fugiat, dolorem iusto. Doloremque ipsa cumque
+              praesentium, quos architecto assumenda distinctio similique error
+              quis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cumque sequi ex perferendis deleniti praesentium est beatae
+              fugiat, dolorem iusto. Doloremque ipsa cumque praesentium, quos
+              architecto assumenda distinctio similique error quis.
+            </div>
+            <div class="chat-message__footer">
+              <div class="chat-message__send-date">22:11 07.05.2024</div>
+            </div>
+          </div>
+          <div id="chat1message2" class="chat-messages__element chat-message">
+            <div class="chat-message__header">
+              <div
+                class="chat-message__author-img chat-message__author-img_author-online user-or-chat-image"
+              ></div>
+              <!-- либо chat-message__author-img_author-offline -->
+              <div class="chat-message__author-name">Петр Петров</div>
+            </div>
+            <div class="chat-message__content">Андрей, вот это ты молодец!</div>
+            <div class="chat-message__footer">
+              <div class="chat-message__send-date">22:14 07.05.2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-new-message-block">
+        <input
+          class="chat-new-message-block__message-text"
+          type="text"
+          placeholder="Type your message..."
+        />
+        <div class="chat-new-message-block__send-button-outter">
+          <button class="chat-new-message-block__send-button">Send</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
 
 <!-- Вопрос: правильно ли то, что при генерации html-кода с помощью JS получается, что у html-кода два источника: html-файлы и JS-код. -->
