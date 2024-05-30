@@ -51,3 +51,7 @@
   border: grey 1px solid;
   color: grey;
 }
+
+.al-article__link {
+  text-decoration: none;
+}
