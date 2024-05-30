@@ -16,7 +16,8 @@ module.exports = {
   },
   entry: {
     chat: './src/chat/chat.js',
-    al: './src/articles-list/al.js',
+    al: './src/blog/articles-list/al.js',
+    article: './src/blog/article/al.js',
   },
   output: {
     /* filename: 'main.js', */
@@ -27,12 +28,13 @@ module.exports = {
     static: './dist',
   },
   plugins: [
-    /* new HtmlWebpackPlugin({
-      template: './src/chat/chat.html',
-    }), */
     new HtmlWebpackPlugin({
-      template: './src/articles-list/al.html',
+      template: './src/blog/articles-list/al.html',
       filename: 'al.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/blog/article/article.html',
+      filename: 'article.html',
     }),
     new HtmlWebpackPlugin({
       template: './src/chat/chat.html',
