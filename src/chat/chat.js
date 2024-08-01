@@ -1,3 +1,4 @@
+import './chat.css';
 import './chat-title/chat-title.css';
 import './chat-new-message-block/chat-new-message-block.css';
 import './chat-messages/chat-messages.css';
