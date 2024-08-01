@@ -14,9 +14,14 @@ module.exports = {
       },
     ],
   },
-  entry: './src/index.js',
+  entry: {
+    chat: './src/chat/chat.js',
+    al: './src/blog/articles-list/al.js',
+    article: './src/blog/article/al.js',
+  },
   output: {
-    filename: 'main.js',
+    /* filename: 'main.js', */
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
@@ -24,7 +29,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: './src/blog/articles-list/al.html',
+      filename: 'al.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/blog/article/article.html',
+      filename: 'article.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chat/chat.html',
+      filename: 'chat.html',
+    }),
+    new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: 'index.html',
     }),
   ],
 };

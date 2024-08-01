@@ -1,0 +1,14 @@
+.al-tags-block__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 5px;
+
+  list-style: none;
+}
+
+.al-tags-block__item {
+  border: grey 1px solid;
+  color: grey;
+  padding: 2px;
+}

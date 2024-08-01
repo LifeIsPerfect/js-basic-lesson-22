@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+}
+
+.chat-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 5px;
+
+  border-radius: 12px;
+  /*padding: 2px;*/
+  /*border: 2px solid black;*/
+}
